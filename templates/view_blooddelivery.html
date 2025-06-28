@@ -1,0 +1,27 @@
+<!-- templates/view_blooddelivery.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Blood Deliveries</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image: url('https://ourbloodinstitute.org/site/assets/files/14592/blood_donation.jpeg');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             height: 100vh;">
+    <h1 class="add_donor_heading">Blood Delivery Records</h1>
+    <table border="1"cellpadding="5" class="table-container">
+        <tr>
+            <th>Blood Bank ID</th>
+            <th>Patient ID</th>
+        </tr>
+        {% for bd in blooddeliverys %}
+        <tr>
+            <td>{{ bd[0] }}</td>
+            <td>{{ bd[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

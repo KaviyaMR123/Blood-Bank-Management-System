@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Blood Bank</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image: url('https://ourbloodinstitute.org/site/assets/files/14592/blood_donation.jpeg');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             height: 100vh;">
+
+    <h1 class="add_donor_heading">Add Blood Bank</h1>
+
+    <form method="POST" class="form-container">
+        <div class="form_style">
+            <label class="label_style">Blood Bank ID:</label>
+            <input type="number" name="blood_id" required>
+        </div>
+        <div class="form_style">
+            <label class="label_style">Name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form_style">
+            <label class="label_style">Address:</label>
+            <input type="text" name="address" required>
+        </div>
+        <div class="form_style">
+            <button class="submit_button">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

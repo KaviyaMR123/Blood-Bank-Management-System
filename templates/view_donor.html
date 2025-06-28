@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Donors</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image: url('https://ourbloodinstitute.org/site/assets/files/14592/blood_donation.jpeg');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             height: 100vh;">
+    <h1 class="add_donor_heading">Donor List</h1>
+    <table border="1" cellpadding="5" class="table-container" >
+
+        <tr>
+            <th>Donor ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Weight</th>
+            <th>Blood Pressure</th>
+            <th>Iron Content</th>
+            <th>Doctor ID</th>
+        </tr>
+        {% for donor in donors %}
+        <tr>
+            <td>{{ donor[0] }}</td>
+            <td>{{ donor[1] }}</td>
+            <td>{{ donor[2] }}</td>
+            <td>{{ donor[3] }}</td>
+            <td>{{ donor[4] }}</td>
+            <td>{{ donor[5] }}</td>
+            <td>{{ donor[6] }}</td>
+            <td>{{ donor[7] }}</td>
+            <td>{{ donor[8] }}</td>
+            <td>{{ donor[9] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
