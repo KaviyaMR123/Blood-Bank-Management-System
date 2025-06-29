@@ -18,12 +18,6 @@ A modern web application designed to manage and streamline the operations of blo
 - 📥 **Blood Request Handling**  
   Allow hospitals or patients to request blood and track its status.
 
-- 🛠️ **Admin Dashboard**  
-  Easy-to-use interface for managing the entire system.
-
-- 🔔 **Notification System**  
-  Alerts for low inventory and donation eligibility reminders (future scope).
-
 ---
 
 ## 🛠️ Tech Stack
