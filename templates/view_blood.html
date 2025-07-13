@@ -1,0 +1,29 @@
+<!-- templates/view_blood.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Blood Records</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image: url('https://ourbloodinstitute.org/site/assets/files/14592/blood_donation.jpeg');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             height: 100vh;" >
+    <h1 class="add_donor_heading">Blood Records</h1>
+    <table border="1" cellpadding="5" class="table-container">
+        <tr>
+            <th>Blood Group</th>
+            <th>Donor ID</th>
+            <th>Blood Bank ID</th>
+        </tr>
+        {% for blood in bloods %}
+        <tr>
+            <td>{{ blood[0] }}</td>
+            <td>{{ blood[1] }}</td>
+            <td>{{ blood[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

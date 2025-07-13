@@ -1,0 +1,33 @@
+<!-- templates/view_patient.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Patients</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image: url('https://ourbloodinstitute.org/site/assets/files/14592/blood_donation.jpeg');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             height: 100vh;">>
+    <h1 class="add_donor_heading">Patient List</h1>
+    <table border="1" cellpadding="5" class="table-container">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Hospital</th>
+        </tr>
+        {% for patient in patients %}
+        <tr>
+            <td>{{ patient[0] }}</td>
+            <td>{{ patient[1] }}</td>
+            <td>{{ patient[2] }}</td>
+            <td>{{ patient[3] }}</td>
+            <td>{{ patient[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
